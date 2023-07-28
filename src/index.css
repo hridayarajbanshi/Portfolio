@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #050609;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.mainText{
+  color: white;
+  font-size: 45px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 50px;
+  
+}
+
+.avatar{
+  width:350px;
+  height: auto;
+  margin: auto;
+  transition: 0.5s;
+}
+.avatar:hover{
+  border-radius: 0%;
+  width: 70%;
+  box-shadow: 0px 0px 12px gray;
+  
+}
+.infoSection{
+  line-height: 30px;
+}
+.about::before{
+content: "";
+width: 50px;
+height: 5px;
+background-color: #F9A826;
+position:absolute;
+}
+
+.mainContent{
+  background-image: url("https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size:cover;
+  background-position: fixed;
+   height: 100%
+}
+.textSection{
+  height: 400px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.imgSection, .infoSection{
+  padding: 100px;
+}
+.infoSection ul li{
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.infoSection ul li:hover{
+  color: #F9A826;
+  cursor: pointer;
+}
+.infoSection ul li::before{
+  content: ">";
+  padding-right: 10px;
+  color: #F9A826;
+}
+.socialMedias{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.formSection{
+  padding: 50px;
+}
+form{
+  height: 500px;
+  padding: 15px;
+}
+form label{
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: .5rem;
+  margin-top: .6rem;
+}
+input{
+  width: 30%;
+  padding: 10px;
+  background-color: transparent;
+  border-bottom: 3px groove white;
+  transition: 0.5s;
+}
+textarea{
+  width: 40%;
+  border-bottom: 3px solid gray;
+  transition: 0.5s;
+  padding: 10px;
+  background-color: transparent;
+}
+input:focus-visible{
+  width: 60% ;
+  outline: none;
+  border-bottom: groove #F9A826;
+}
+textarea:focus-visible{
+  width: 80%;
+  outline: none;
+  border-bottom: 3px solid #F9A826;
+  
+}
+.btn{
+  transition: 0.5s;
+  width: 20%;
+  border: 3px solid white;
+  border-radius: 8px;
+}
+.btn:hover{
+  border: 3px solid #F9A826;
+  cursor: pointer;
+}
+.infos{
+  padding: 20px;
+}
+.infos .a{
+  font-size: 17px;
+margin: 10px;
+}
+.servicesContent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.services{
+  margin-bottom: 30px;
+}
+
+.box{
+  border-radius: 15px;
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border: 5px solid #050609;
+ background-color:#050609;
+  transition: 0.5s;
+  color: white
+}
+.nav{
+  z-index: 5;
+}
+.box:hover{
+  border: 5px solid #F9A826;
+  color: black;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(-10px);
+}
+.typed{
+  line-height:40px;
+  color: #F9A826;
+}
+.box p{
+  line-height: 25px;
+  text-align: center;
+}
+.overflow-hidden{
+  transition: 0.5s;
+}
+.overflow-hidden:hover{
+  transform: translateY(-20px);
+}
+.projectSection{
+  padding-bottom: 30px;
+  /* background-image: url("https://images.pexels.com/photos/6424588/pexels-photo-6424588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-color: white;
+  color: black;
+}
+@media all and (max-width: 750px) {
+  input, textArea{
+    width: 100%;
+  }
+  .textSection{
+    width: 100%;
+    height: auto;
+
+  }
+  .mainContent{
+    background-position: center;
+  }
+  .avatar:hover{
+width: 100%;
+  }
+
+}
